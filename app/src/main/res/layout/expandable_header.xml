@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_9dp"
+        android:layout_marginLeft="@dimen/_14dp"
+        android:layout_marginRight="@dimen/_14dp"
+        android:layout_marginTop="@dimen/_9dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_card_user" />
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="dash_item_names"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14dp" />
+
+        <ImageView
+            android:id="@+id/foldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/accordion_minus"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
